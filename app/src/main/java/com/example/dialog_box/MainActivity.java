@@ -20,23 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         @SuppressLint({"MissingInflatedId", "LocalSupp" + "ress", "LocalSuppress"})
-        MaterialButton button=findViewById(R.id.button);
+        MaterialButton button = findViewById(R.id.button);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        MaterialButton Errorbutton=findViewById(R.id.errorbutton);
+        MaterialButton Errorbutton = findViewById(R.id.errorbutton);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        MaterialButton Msgbutton=findViewById(R.id.Messagebutton);
+        MaterialButton Msgbutton = findViewById(R.id.Messagebutton);
 
-
-
-        UtilHelperClass.checkNetwork(this);
-
-        String [ ] str = UtilHelperClass.ApiUrls();
-        String a = str[1];
-        Toast.makeText(this , a, Toast.LENGTH_SHORT).show();
-
-
-        // UtilHelperClass();
-      //  Sucess();
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -51,25 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-         Msgbutton.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
+        Msgbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-             }
-         });
+            }
+        });
     }
-
-//    private void Sucess() {
-//        new MaterialAlertDialogBuilder(MainActivity.this)
-//                .setTitle("Sucess")
-//                .setMessage("Your message goes here. Keep it short but clear.")
-//                .show();
-//    }
-//
-//    private void UtilHelperClass() {
-//        new MaterialAlertDialogBuilder(MainActivity.this)
-//                .setTitle("Error")
-//                .setMessage("Your message goes here. Keep it short but clear.")
-//                .show();
-    }
+}
 
